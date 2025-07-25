@@ -1,0 +1,125 @@
+body{
+    background: #080808;
+    background: linear-gradient(90deg, rgba(8, 8, 8, 1) 0%, rgba(11, 121, 9, 1) 70%, rgba(0, 0, 0, 1) 100%);
+    height: 100vh;
+
+}
+*{
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    transition:all .44s ease;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;       
+
+}
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100px;
+    background-color:rgba(0, 0, 0, 0.832);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header h1{
+    text-transform: uppercase;
+}
+.nav-links{
+    display: flex;
+    
+}
+.nav-links li{
+    margin: 0 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    
+}
+.nav-links a:hover{
+    border-bottom: 2px solid white;
+}
+
+@media screen and (max-width:750px){
+    
+    .grid-section{
+        grid-template-columns: 1fr;
+        margin-top: 120px;
+    }
+    .grids{
+        border-radius: 8px;
+        margin: 20px 8px;
+    }
+    .nav-links{
+        display: none;
+    }
+
+}
+@media screen and (min-width:750px){
+    .grid-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 101px;
+    gap: 5px;
+    }
+    .grids{
+        border-radius:25px;
+    }
+    
+}
+.grids{
+    background-color: rgba(255, 255, 255, 0.232);
+    min-width: 150px;
+    max-width: auto;
+    min-height: 80px;
+    max-height: auto;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+.grids:nth-child(1){
+    grid-column: 1/4;
+    grid-row:1/3
+}
+.grids:nth-child(2){
+    grid-column: 1/3;
+    grid-row: 3/6;
+}
+.grids:nth-child(3){
+    grid-row: 3/7;
+}
+.grids:nth-child(4){
+    grid-column:1/3 ;
+    grid-row: 6/9;
+}
+.grids:nth-child(5){
+    grid-row:7/9 ;
+}
+.grids:nth-child(6){
+    grid-column: 1/4;
+    grid-row:9/11 ;
+}
+.grids:nth-child(7){
+    grid-column: 1/3;
+    grid-row: 11/13;
+}
+.grids:nth-child(8){
+    grid-row: 11/13;
+}
+.grids:nth-child(9){
+    grid-column: 1/4;
+    grid-row:13/15
+}
+.grids:nth-child(10){
+    grid-column:1/3;
+    grid-row:15/17 ;
+}
+.grids:nth-child(11){
+    grid-column:3/4;
+    grid-row:15/17;
+}
