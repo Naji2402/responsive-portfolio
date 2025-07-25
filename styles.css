@@ -116,7 +116,7 @@
     margin-left: 0;
 }
 .message{
-    margin-left: 0
+    margin-left: 23px;
 }
 .section1 h1{
     margin: 0 10px;
@@ -145,7 +145,7 @@
     margin-left: 0;
 }
 .message{
-    margin-left: 0
+    margin-left: 23px;
 }
 .contact:hover{
     transform: translateY(10px);
